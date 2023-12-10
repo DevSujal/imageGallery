@@ -1,0 +1,99 @@
+* {
+margin : 0;
+padding : 0;
+box-sizing : border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+width : 100%;
+height : 100%;
+background-color: blueviolet;
+}
+
+.container{
+    color: white;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.search{
+    display: flex;
+    background-color: white;
+    border-radius: 20px 10px;
+    overflow: hidden;
+}
+
+.search img{
+    width: 35px;
+    border-radius: 50%;
+}
+
+.search input {
+    padding: 10px 5px;
+    border: none;
+}
+
+#images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding : 20px
+}
+
+.eachimage img {
+    border-radius: 10px;
+    height: 300px;
+    width: 250px;
+}
+
+.eachimage {
+    box-shadow: black 0 4px 8px;
+    border: none;
+    border-radius: 10px;
+    min-height: 250px;
+    min-width: 200px;
+    padding: 15px;
+    cursor : pointer;
+    transition: all ease .1s;
+}
+
+.eachimage:hover {
+    transform: translateX(10px) rotate(10deg) translateY(5px);
+    box-shadow: rgba(177, 35, 137, 100%) 0px 18px 20px
+}
+
+ button{
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    cursor: pointer;
+    box-shadow: rgb(85, 0, 164) 0px 4px 8px;
+    border: none;
+    padding: 20px 10px;
+    min-width: 10%;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(70deg, blueviolet 50%, rgb(106, 31, 175) 20%);
+    font-size: large;
+    font-weight: 700;
+    transition: all ease .4s;
+}
+ button:hover {
+    background: linear-gradient(70deg, rgb(112, 37, 181) 60%, blueviolet 20%);
+}
+
